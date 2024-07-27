@@ -1,11 +1,12 @@
 
 
+import Navbar from "./components/navbar"
 function App() {
+
   return (
     <>
-      <div className="">
-        <p>Test</p>
-      </div>
+      <Navbar />
+      <p>Home Page</p>
     </>
   )
 }
