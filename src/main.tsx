@@ -29,7 +29,7 @@ const router = createBrowserRouter(
       element: <Update />,
       children:[
         {
-          path:"/updateWrite/:firebaseID",
+          path:"/update/:firebaseID",
           element: <UpdateWrite/>
         }
       ]

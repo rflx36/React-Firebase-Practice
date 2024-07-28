@@ -28,8 +28,8 @@ export default function Write() {
         <>
             <Navbar/>
             <div className="">
-                <Input name="age" value={age} uponChange={x => setAge(x)} />
-                <Input name="name" value={name} uponChange={x => setName(x)} />
+                <Input name="age" value={age} uponChange={x => setAge(x)} type="number"/>
+                <Input name="name" value={name} uponChange={x => setName(x)}  type="text"/>
                 <button onClick={SaveData}>Save</button>
             </div>
         </>

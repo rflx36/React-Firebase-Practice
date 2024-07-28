@@ -21,6 +21,13 @@ export default function Read() {
             alert("err");
         }
     }
+    const fetchAll = async () => {
+        const db = getDatabase(app);
+        const snap = await get(ref(db,"/"));
+        if (snap.exists()){
+            console.log(snap.val());
+        }
+    }
     return (
         <>
             <Navbar/>
@@ -34,6 +41,7 @@ export default function Read() {
                     ))
                 }
             </ul>
+            <button onClick={fetchAll}> fetch all </button>
         </>
     )
 }
